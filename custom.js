@@ -116,11 +116,11 @@ mobileLinks.forEach(link => {
 // 6. Google Calendar (Same as before)
 function addToGoogleCalendar() {
     const event = {
-        title: "Sarah & James - Art Wedding",
-        start: "20251015T140000Z",
-        end: "20251015T230000Z",
+        title: "Edwin & Alphi - Wedding",
+        start: "20260105T120000Z",
+        end: "20260105T150000Z",
         details: "Join us for our wedding ceremony and reception!",
-        location: "St. Patrick's Cathedral, New York, NY"
+        location: "St. Joseph's Syro-Malabar Church, Poovathussery"
     };
     const googleUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start}/${event.end}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`;
     window.open(googleUrl, '_blank');
