@@ -125,3 +125,28 @@ function addToGoogleCalendar() {
     const googleUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start}/${event.end}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`;
     window.open(googleUrl, '_blank');
 }
+
+// Timer
+const eventDate = new Date("January 05, 2026 00:00:00").getTime();
+
+const countdownInterval = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance < 0) {
+        clearInterval(countdownInterval);
+        document.getElementById("countdown").innerHTML =
+            "<h2 class='text-5xl font-syne text-red-800'>The Day Has Arrived</h2>";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = String(days).padStart(2, "0");
+    document.getElementById("hours").innerText = String(hours).padStart(2, "0");
+    document.getElementById("minutes").innerText = String(minutes).padStart(2, "0");
+    document.getElementById("seconds").innerText = String(seconds).padStart(2, "0");
+}, 1000);

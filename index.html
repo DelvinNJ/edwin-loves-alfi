@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +13,18 @@
     <meta property="og:url" content="https://edwin-loves-Alfin.vercel.app" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Edwin 💘 Alfin" />
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Google Fonts: Syne (Artistic) & Space Grotesk (Modern) -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./style.css">
-    
-    
+
+
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -29,8 +32,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
-    
+
 </head>
+
 <body class="antialiased">
 
     <!-- CURSOR -->
@@ -50,7 +54,7 @@
     <!-- NAVIGATION (Minimalist Sticky) -->
     <nav class="fixed top-0 w-full z-40 mix-blend-exclusion text-white px-6 py-4 flex justify-between items-center">
         <a href="#" class="text-2xl font-bold tracking-tighter hover-trigger" data-cursor="link">E & A</a>
-        
+
         <!-- Desktop Menu -->
         <div class="hidden md:flex gap-8 text-sm font-medium tracking-widest uppercase">
             <a href="#couple" class="hover:underline hover-trigger">Muse</a>
@@ -66,44 +70,57 @@
     </nav>
 
     <!-- MOBILE MENU OVERLAY -->
-    <div id="mobile-menu" class="mobile-menu-overlay fixed inset-0 z-30 bg-red-800 text-white flex items-center justify-center">
+    <div id="mobile-menu"
+        class="mobile-menu-overlay fixed inset-0 z-30 bg-red-800 text-white flex items-center justify-center">
         <div class="flex flex-col gap-8 text-4xl font-bold font-syne text-center">
             <a href="#couple" class="hover:text-gray-400 mobile-link">The Muse</a>
             <a href="#location" class="hover:text-gray-400 mobile-link">Coordinates</a>
             <a href="#gallery" class="hover:text-gray-400 mobile-link">Exhibit</a>
             <a href="#rsvp" class="hover:text-gray-400 mobile-link">RSVP</a>
-            <button id="menu-close" class="mt-8 text-sm uppercase tracking-widest border border-white px-6 py-2 rounded-full">Close</button>
+            <button id="menu-close"
+                class="mt-8 text-sm uppercase tracking-widest border border-white px-6 py-2 rounded-full">Close</button>
         </div>
     </div>
 
     <!-- HERO SECTION -->
     <header class="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
         <!-- Abstract Background Elements -->
-        <div class="absolute top-20 right-[-10%] w-[50vw] h-[50vw] bg-[#E65100] rounded-full blur-[100px] opacity-20 pointer-events-none"></div>
-        <div class="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-[#2B3A42] rounded-full blur-[80px] opacity-10 pointer-events-none"></div>
+        <div
+            class="absolute top-20 right-[-10%] w-[50vw] h-[50vw] bg-[#E65100] rounded-full blur-[100px] opacity-20 pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-[-10%] left-[-10%] w-[40vw] h-[40vw] bg-[#2B3A42] rounded-full blur-[80px] opacity-10 pointer-events-none">
+        </div>
 
         <div class="container mx-auto px-4 relative z-10">
             <!-- Asymmetric Grid -->
             <div class="grid grid-cols-12 gap-4 items-center">
-                
+
                 <!-- Large Typography Left -->
                 <div class="col-span-12 md:col-span-7">
                     <h1 class="text-[12vw] md:text-[9vw] leading-[0.85] font-bold uppercase mix-blend-multiply">
-                        <span class="block hover-trigger transform hover:skew-x-6 transition-transform origin-left text-red-800">Edwin</span>
+                        <span
+                            class="block hover-trigger transform hover:skew-x-6 transition-transform origin-left text-red-800">Edwin</span>
                         <span class="block text-outline italic font-light hover-trigger">&</span>
-                        <span class="block text-right md:text-left hover-trigger transform hover:-skew-x-6 transition-transform origin-left text-red-800">Alfin</span>
+                        <span
+                            class="block text-right md:text-left hover-trigger transform hover:-skew-x-6 transition-transform origin-left text-red-800">Alfin</span>
                     </h1>
                 </div>
 
                 <!-- Floating Image Right -->
                 <div class="col-span-12 md:col-span-5 relative mt-10 md:mt-0">
-                    <div class="relative z-10 border-brutal bg-white p-2 transform rotate-3 hover:rotate-0 transition-transform duration-500 hover-trigger" data-cursor="view">
-                        <img height="200" src="./media/soul.png" alt="Couple Art" class="w-full grayscale hover:grayscale-0 transition-all duration-700 reveal-img">
-                        <div class="absolute -bottom-6 -right-6 w-24 h-24 bg-[#E65100] rounded-full flex items-center justify-center text-white font-bold animate-spin-slow">
+                    <div class="relative z-10 border-brutal bg-white p-2 transform rotate-3 hover:rotate-0 transition-transform duration-500 hover-trigger"
+                        data-cursor="view">
+                        <img height="200" src="./media/soul.png" alt="Couple Art"
+                            class="w-full grayscale hover:grayscale-0 transition-all duration-700 reveal-img">
+                        <div
+                            class="absolute -bottom-6 -right-6 w-24 h-24 bg-[#E65100] rounded-full flex items-center justify-center text-white font-bold animate-spin-slow">
                             <svg viewBox="0 0 100 100" width="80" height="80">
-                                <path id="curve" d="M 50 50 m -37 0 a 37 37 0 1 1 74 0 a 37 37 0 1 1 -74 0" fill="transparent"/>
+                                <path id="curve" d="M 50 50 m -37 0 a 37 37 0 1 1 74 0 a 37 37 0 1 1 -74 0"
+                                    fill="transparent" />
                                 <text width="500">
-                                    <textPath xlink:href="#curve" class="text-[14px] uppercase tracking-widest fill-white">
+                                    <textPath xlink:href="#curve"
+                                        class="text-[14px] uppercase tracking-widest fill-white">
                                         • Save the Date • Jan 5th •
                                     </textPath>
                                 </text>
@@ -111,7 +128,8 @@
                         </div>
                     </div>
                     <!-- Geometric Decoration -->
-                    <div class="absolute top-[-20px] left-[-20px] w-full h-full border-brutal border-[#E65100] -z-10"></div>
+                    <div class="absolute top-[-20px] left-[-20px] w-full h-full border-brutal border-[#E65100] -z-10">
+                    </div>
                 </div>
             </div>
 
@@ -121,8 +139,9 @@
                     <p>NYC • 2026</p>
                     <p>JANUARY 05th</p>
                 </div>
-                
-                <button onclick="addToGoogleCalendar()" class="btn-magnetic mt-6 md:mt-0 px-8 py-4 bg-red-800 text-white rounded-full font-bold uppercase tracking-wider hover:bg-[#E65100] transition-colors hover-trigger">
+
+                <button onclick="addToGoogleCalendar()"
+                    class="btn-magnetic mt-6 md:mt-0 px-8 py-4 bg-red-800 text-white rounded-full font-bold uppercase tracking-wider hover:bg-[#E65100] transition-colors hover-trigger">
                     Add to Calendar ↗
                 </button>
             </div>
@@ -130,43 +149,93 @@
     </header>
 
     <!-- MARQUEE DIVIDER -->
-    <div class="bg-red-800 text-white py-4 border-y border-white overflow-hidden transform -rotate-1 origin-left z-20 relative">
+    <div
+        class="bg-red-800 text-white py-4 border-y border-white overflow-hidden transform -rotate-1 origin-left z-20 relative">
         <div class="marquee-container">
             <div class="marquee-content text-4xl md:text-6xl font-syne font-bold uppercase">
-                Forever • Art • Love • Celebration • Forever • Art • Love • Celebration • Forever • Art • Love • Celebration •
+                Forever • Art • Love • Celebration • Forever • Art • Love • Celebration • Forever • Art • Love •
+                Celebration •
             </div>
         </div>
     </div>
+
+    <section id="countdown" class="py-24 bg-white border-t-2 border-black relative overflow-hidden">
+        <div class="container mx-auto px-4 text-center">
+            <span class="text-[#E65100] font-bold tracking-[0.3em] uppercase mb-4 block">
+                The Moment Begins In
+            </span>
+
+            <h2 class="text-6xl md:text-8xl font-syne uppercase text-red-800 mb-12">
+                Countdown
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="border-brutal p-6">
+                    <div id="days" class="text-5xl md:text-7xl font-bold">00</div>
+                    <div class="mt-2 text-sm uppercase tracking-widest font-mono">Days</div>
+                </div>
+                <div class="border-brutal p-6">
+                    <div id="hours" class="text-5xl md:text-7xl font-bold">00</div>
+                    <div class="mt-2 text-sm uppercase tracking-widest font-mono">Hours</div>
+                </div>
+                <div class="border-brutal p-6">
+                    <div id="minutes" class="text-5xl md:text-7xl font-bold">00</div>
+                    <div class="mt-2 text-sm uppercase tracking-widest font-mono">Minutes</div>
+                </div>
+                <div class="border-brutal p-6">
+                    <div id="seconds" class="text-5xl md:text-7xl font-bold">00</div>
+                    <div class="mt-2 text-sm uppercase tracking-widest font-mono">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- COUPLE SECTION (Collage Style) -->
     <section id="couple" class="py-32 relative overflow-hidden">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                
+
                 <!-- Text Content -->
                 <div class="order-2 md:order-1 relative z-10">
-                    <span class="text-[#E65100] font-bold tracking-[0.3em] uppercase mb-4 block">The Muse</span>
-                    <h2 class="text-6xl md:text-8xl mb-8 leading-none text-red-800">Two Souls<br><span class="italic font-serif">One Canvas</span></h2>
-                    <p class="text-lg md:text-xl leading-relaxed max-w-md mb-8">
-                        "Love is the only art form where the subject and the viewer become one. We invite you to witness our masterpiece."
-                    </p>
-                    <div class="flex gap-4">
-                        <div class="w-3 h-3 bg-red-800 rounded-full"></div>
-                        <div class="w-3 h-3 bg-red-800 rounded-full"></div>
-                        <div class="w-3 h-3 bg-[#E65100] rounded-full"></div>
+                    <span class="text-[#E65100] font-bold tracking-[0.3em] uppercase mb-4 block">
+                        The Invitation
+                    </span>
+
+                    <h2 class="text-6xl md:text-8xl mb-8 leading-none text-red-800">
+                        With God’s Blessings
+                    </h2>
+                    <div class="text-center">
+                        <p class="text-lg md:text-xl leading-relaxed max-w-md mb-6">
+                            Mr. <strong>Johnson N A</strong> & Mrs. <strong>Tessy Johnson</strong><br>
+                            and<br>
+                            Mr. <strong>George V.M</strong> & Mrs. <strong>Janet George</strong>
+                        </p>
+
+                        <p class="text-lg md:text-xl leading-relaxed max-w-md mb-8">
+                            cordially invite you to share in the wedding celebration of
+                            <br><br>
+                            <span class="font-syne text-3xl text-red-800 uppercase">Edwin</span>
+                            <span class="font-syne text-3xl text-red-800 uppercase">&</span>
+                            <span class="font-syne text-3xl text-red-800 uppercase">Alfin</span>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Abstract Visuals -->
                 <div class="order-1 md:order-2 relative h-[600px] w-full flex justify-center items-center">
                     <!-- Groom -->
-                    <div class="absolute top-0 right-0 w-64 h-80 overflow-hidden border-brutal transform rotate-6 hover:rotate-0 transition-all duration-500 z-10 bg-white p-2 hover-trigger">
-                         <img src="./media/6.png" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all">
-                         <div class="absolute bottom-2 left-2 bg-white px-2 py-1 font-bold text-xs uppercase">Edwin & Alfin</div>
+                    <div
+                        class="absolute top-0 right-0 w-64 h-80 overflow-hidden border-brutal transform rotate-6 hover:rotate-0 transition-all duration-500 z-10 bg-white p-2 hover-trigger">
+                        <img src="./media/6.png"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all">
+                        <div class="absolute bottom-2 left-2 bg-white px-2 py-1 font-bold text-xs uppercase">Edwin &
+                            Alfin</div>
                     </div>
 
                     <!-- Shape -->
-                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#F3F2EE] blob border-brutal -z-0"></div>
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[#F3F2EE] blob border-brutal -z-0">
+                    </div>
                 </div>
             </div>
         </div>
@@ -176,34 +245,48 @@
     <section id="location" class="py-24 bg-white border-t-2 border-black">
         <div class="container mx-auto px-4">
             <h2 class="text-[10vw] leading-none text-outline mb-12 opacity-20 select-none">COORDINATES</h2>
-            
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border-brutal">
-                
+
                 <!-- Ceremony Card -->
-                <div class="group relative border-b-2 md:border-b-0 md:border-r-2 border-black p-12 hover:bg-red-800 hover:text-white transition-colors duration-500 hover-trigger">
-                    <div class="absolute top-4 right-4 text-xs font-mono border border-current px-2 rounded-full">11:00 PM</div>
+                <div
+                    class="group relative border-b-2 md:border-b-0 md:border-r-2 border-black p-12 hover:bg-red-800 hover:text-white transition-colors duration-500 hover-trigger">
+                    <div class="absolute top-4 right-4 text-xs font-mono border border-current px-2 rounded-full">11:00
+                        PM</div>
                     <h3 class="text-4xl mb-2 font-bold uppercase text-red-800">Ceremony</h3>
                     <div class="h-0.5 w-12 bg-[#E65100] mb-6 group-hover:w-full transition-all duration-500"></div>
-                    
+
                     <p class="text-xl mb-1 font-mono">St. Joseph Church Poovathussery</p>
                     <p class="opacity-70 mb-8">Ernakulam, Kerala</p>
-                    
-                    <div class="h-48 w-full bg-gray-200 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.3981033826203!2d76.31625207479655!3d10.206027389910156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0804583782947b%3A0x54df858ca4223a4b!2sSt.%20Joseph&#39;s%20Syro-Malabar%20Church%2C%20Poovathussery!5e1!3m2!1sen!2sus!4v1765464824330!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div
+                        class="h-48 w-full bg-gray-200 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.3981033826203!2d76.31625207479655!3d10.206027389910156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0804583782947b%3A0x54df858ca4223a4b!2sSt.%20Joseph&#39;s%20Syro-Malabar%20Church%2C%20Poovathussery!5e1!3m2!1sen!2sus!4v1765464824330!5m2!1sen!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
 
                 <!-- Reception Card -->
-                <div class="group relative p-12 hover:bg-[#E65100] hover:text-white transition-colors duration-500 hover-trigger">
-                    <div class="absolute top-4 right-4 text-xs font-mono border border-current px-2 rounded-full">12:30 PM</div>
+                <div
+                    class="group relative p-12 hover:bg-[#E65100] hover:text-white transition-colors duration-500 hover-trigger">
+                    <div class="absolute top-4 right-4 text-xs font-mono border border-current px-2 rounded-full">12:30
+                        PM</div>
                     <h3 class="text-4xl mb-2 font-bold uppercase text-red-800">Reception</h3>
-                    <div class="h-0.5 w-12 bg-red-800 mb-6 group-hover:bg-white group-hover:w-full transition-all duration-500"></div>
-                    
+                    <div
+                        class="h-0.5 w-12 bg-red-800 mb-6 group-hover:bg-white group-hover:w-full transition-all duration-500">
+                    </div>
+
                     <p class="text-xl mb-1 font-mono">St. Joseph Church Poovathussery, Parish Hall</p>
                     <p class="opacity-70 mb-8">Ernakulam, Kerala</p>
-                    
-                    <div class="h-48 w-full bg-gray-200 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.3981033826203!2d76.31625207479655!3d10.206027389910156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0804583782947b%3A0x54df858ca4223a4b!2sSt.%20Joseph&#39;s%20Syro-Malabar%20Church%2C%20Poovathussery!5e1!3m2!1sen!2sus!4v1765464824330!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div
+                        class="h-48 w-full bg-gray-200 overflow-hidden relative grayscale group-hover:grayscale-0 transition-all">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.3981033826203!2d76.31625207479655!3d10.206027389910156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0804583782947b%3A0x54df858ca4223a4b!2sSt.%20Joseph&#39;s%20Syro-Malabar%20Church%2C%20Poovathussery!5e1!3m2!1sen!2sus!4v1765464824330!5m2!1sen!2sus"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -213,14 +296,20 @@
     <!-- VIDEO AS ART -->
     <section class="py-20 bg-red-800 text-white overflow-hidden relative">
         <div class="container mx-auto px-4 text-center relative z-10">
-            <div class="border-4 border-white p-2 inline-block transform -rotate-1 hover:rotate-0 transition-transform duration-500">
+            <div
+                class="border-4 border-white p-2 inline-block transform -rotate-1 hover:rotate-0 transition-transform duration-500">
                 <div class="relative w-[80vw] max-w-4xl aspect-video bg-gray-800 overflow-hidden group hover-trigger">
-                    <iframe class="min-player" src="https://www.youtube.com/embed/5R1nFYtqi78?si=HWdR-0Z1U4Km-Vfx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="min-player" src="https://www.youtube.com/embed/5R1nFYtqi78?si=HWdR-0Z1U4Km-Vfx"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
             <p class="mt-8 font-mono text-sm tracking-[0.5em] uppercase">The Motion Picture</p>
         </div>
-        <div class="absolute inset-0 z-0 opacity-20" style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #333 10px, #333 11px);"></div>
+        <div class="absolute inset-0 z-0 opacity-20"
+            style="background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, #333 10px, #333 11px);">
+        </div>
     </section>
 
     <!-- GALLERY (Mosaic/Mondrian Inspired) -->
@@ -232,38 +321,50 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-4 grid-rows-auto gap-4">
-                
+
                 <!-- Tall Item -->
                 <div class="md:col-span-1 md:row-span-2 relative overflow-hidden group border-brutal hover-trigger">
-                    <img src="./media/1.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-[#E65100] opacity-0 group-hover:opacity-40 mix-blend-multiply transition-opacity"></div>
+                    <img src="./media/1.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-[#E65100] opacity-0 group-hover:opacity-40 mix-blend-multiply transition-opacity">
+                    </div>
                 </div>
 
                 <!-- Wide Item -->
                 <div class="md:col-span-2 md:row-span-1 relative overflow-hidden group border-brutal hover-trigger">
-                    <img src="./media/2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-40 mix-blend-multiply transition-opacity"></div>
+                    <img src="./media/2.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-40 mix-blend-multiply transition-opacity">
+                    </div>
                 </div>
 
                 <!-- Text Block Art -->
-                <div class="md:col-span-1 md:row-span-1 bg-red-800 text-white p-6 flex items-center justify-center border-brutal hover-trigger">
+                <div
+                    class="md:col-span-1 md:row-span-1 bg-red-800 text-white p-6 flex items-center justify-center border-brutal hover-trigger">
                     <p class="font-syne text-center text-xl leading-tight">"To love is to burn"</p>
                 </div>
 
                 <!-- Standard Item -->
                 <div class="md:col-span-1 md:row-span-1 relative overflow-hidden group border-brutal hover-trigger">
-                    <img src="./media/3.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="./media/3.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
 
-                 <!-- Tall Item 2 -->
-                 <div class="md:col-span-1 md:row-span-2 relative overflow-hidden group border-brutal hover-trigger">
-                    <img src="./media/4.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                     <div class="absolute inset-0 bg-yellow-400 opacity-0 group-hover:opacity-40 mix-blend-multiply transition-opacity"></div>
+                <!-- Tall Item 2 -->
+                <div class="md:col-span-1 md:row-span-2 relative overflow-hidden group border-brutal hover-trigger">
+                    <img src="./media/4.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div
+                        class="absolute inset-0 bg-yellow-400 opacity-0 group-hover:opacity-40 mix-blend-multiply transition-opacity">
+                    </div>
                 </div>
 
                 <!-- Standard Item -->
                 <div class="md:col-span-1 md:row-span-1 relative overflow-hidden group border-brutal hover-trigger">
-                    <img src="./media/5.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <img src="./media/5.png"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 </div>
 
             </div>
@@ -275,7 +376,7 @@
         <!-- Big Text Background -->
         <!-- <div class="absolute top-0 left-0 text-[20vw] font-bold text-gray-200 select-none z-0 leading-none">RSVP</div> -->
 
-        <div class="container mx-auto px-4 relative z-10">  
+        <div class="container mx-auto px-4 relative z-10">
             <div class="text-center mt-12 font-mono text-xs uppercase tracking-widest">
                 <p>© 2026 E & A • Circle the calendar</p>
             </div>
@@ -284,4 +385,5 @@
 
     <script src="./custom.js"></script>
 </body>
+
 </html>
